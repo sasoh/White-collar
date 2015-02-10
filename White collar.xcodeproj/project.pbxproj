@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D357F291A87DEB900505E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F281A87DEB900505E5D /* main.m */; };
 		2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F2B1A87DEB900505E5D /* AppDelegate.m */; };
-		2D357F2F1A87DEB900505E5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F2E1A87DEB900505E5D /* ViewController.m */; };
+		2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F2E1A87DEB900505E5D /* MainViewController.m */; };
 		2D357F321A87DEB900505E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F301A87DEB900505E5D /* Main.storyboard */; };
 		2D357F341A87DEB900505E5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F331A87DEB900505E5D /* Images.xcassets */; };
 		2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F351A87DEB900505E5D /* LaunchScreen.xib */; };
@@ -32,8 +32,8 @@
 		2D357F281A87DEB900505E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D357F2A1A87DEB900505E5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D357F2B1A87DEB900505E5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2D357F2D1A87DEB900505E5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2D357F2E1A87DEB900505E5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D357F2D1A87DEB900505E5D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2D357F2E1A87DEB900505E5D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2D357F311A87DEB900505E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D357F331A87DEB900505E5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D357F361A87DEB900505E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				2D357F2A1A87DEB900505E5D /* AppDelegate.h */,
 				2D357F2B1A87DEB900505E5D /* AppDelegate.m */,
-				2D357F2D1A87DEB900505E5D /* ViewController.h */,
-				2D357F2E1A87DEB900505E5D /* ViewController.m */,
+				2D357F2D1A87DEB900505E5D /* MainViewController.h */,
+				2D357F2E1A87DEB900505E5D /* MainViewController.m */,
 				2D357F301A87DEB900505E5D /* Main.storyboard */,
 				2D357F331A87DEB900505E5D /* Images.xcassets */,
 				2D357F351A87DEB900505E5D /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D357F2F1A87DEB900505E5D /* ViewController.m in Sources */,
+				2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */,
 				2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */,
 				2D357F291A87DEB900505E5D /* main.m in Sources */,
 			);
@@ -412,6 +412,7 @@
 				2D357F481A87DEBA00505E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D357F491A87DEBA00505E5D /* Build configuration list for PBXNativeTarget "White collarTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				2D357F4B1A87DEBA00505E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

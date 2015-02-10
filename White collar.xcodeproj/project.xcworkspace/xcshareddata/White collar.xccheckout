@@ -14,11 +14,11 @@
 		<string>https://github.com/sasoh/White-collar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>White collar/White collar.xcodeproj</string>
+	<string>White collar.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8F299A5C9D062491C97A83464D7D6C9A8910B8B2</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sasoh/White-collar.git</string>
