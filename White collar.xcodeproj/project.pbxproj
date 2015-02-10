@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D08AD551A8A739C006DF990 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D08AD541A8A739C006DF990 /* CreditsViewController.m */; };
+		2D08AD581A8A7563006DF990 /* LevelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D08AD571A8A7563006DF990 /* LevelSelectViewController.m */; };
+		2D08AD5B1A8A75D7006DF990 /* GameSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D08AD5A1A8A75D7006DF990 /* GameSceneViewController.m */; };
 		2D357F291A87DEB900505E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F281A87DEB900505E5D /* main.m */; };
 		2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F2B1A87DEB900505E5D /* AppDelegate.m */; };
 		2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F2E1A87DEB900505E5D /* MainViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D08AD531A8A739C006DF990 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		2D08AD541A8A739C006DF990 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		2D08AD561A8A7563006DF990 /* LevelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectViewController.h; sourceTree = "<group>"; };
+		2D08AD571A8A7563006DF990 /* LevelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectViewController.m; sourceTree = "<group>"; };
+		2D08AD591A8A75D7006DF990 /* GameSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneViewController.h; sourceTree = "<group>"; };
+		2D08AD5A1A8A75D7006DF990 /* GameSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneViewController.m; sourceTree = "<group>"; };
 		2D357F231A87DEB900505E5D /* White collar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "White collar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D357F271A87DEB900505E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D357F281A87DEB900505E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D08AD511A8A7363006DF990 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D08AD531A8A739C006DF990 /* CreditsViewController.h */,
+				2D08AD541A8A739C006DF990 /* CreditsViewController.m */,
+				2D08AD591A8A75D7006DF990 /* GameSceneViewController.h */,
+				2D08AD5A1A8A75D7006DF990 /* GameSceneViewController.m */,
+				2D08AD561A8A7563006DF990 /* LevelSelectViewController.h */,
+				2D08AD571A8A7563006DF990 /* LevelSelectViewController.m */,
+				2D357F2D1A87DEB900505E5D /* MainViewController.h */,
+				2D357F2E1A87DEB900505E5D /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		2D357F1A1A87DEB900505E5D = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +107,7 @@
 			children = (
 				2D357F2A1A87DEB900505E5D /* AppDelegate.h */,
 				2D357F2B1A87DEB900505E5D /* AppDelegate.m */,
-				2D357F2D1A87DEB900505E5D /* MainViewController.h */,
-				2D357F2E1A87DEB900505E5D /* MainViewController.m */,
+				2D08AD511A8A7363006DF990 /* Classes */,
 				2D357F301A87DEB900505E5D /* Main.storyboard */,
 				2D357F331A87DEB900505E5D /* Images.xcassets */,
 				2D357F351A87DEB900505E5D /* LaunchScreen.xib */,
@@ -220,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */,
+				2D08AD581A8A7563006DF990 /* LevelSelectViewController.m in Sources */,
 				2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */,
 				2D357F291A87DEB900505E5D /* main.m in Sources */,
+				2D08AD551A8A739C006DF990 /* CreditsViewController.m in Sources */,
+				2D08AD5B1A8A75D7006DF990 /* GameSceneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
