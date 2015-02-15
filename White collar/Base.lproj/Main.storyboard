@@ -149,7 +149,7 @@
                         <viewControllerLayoutGuide type="top" id="QMg-6y-IKI"/>
                         <viewControllerLayoutGuide type="bottom" id="h49-vP-LQS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Gcs-pB-1IG">
+                    <view key="view" contentMode="scaleToFill" id="Gcs-pB-1IG" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

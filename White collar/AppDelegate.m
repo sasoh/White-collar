@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#define DD_LEGACY_MACROS 0
+#import "DDTTYLogger.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
     return YES;
 }
 

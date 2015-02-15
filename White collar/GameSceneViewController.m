@@ -7,6 +7,8 @@
 //
 
 #import "GameSceneViewController.h"
+#import <SpriteKit/SpriteKit.h>
+#import "GameScene.h"
 
 @interface GameSceneViewController ()
 
@@ -14,9 +16,18 @@
 
 @implementation GameSceneViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+    SKView *spriteView = (SKView *)self.view;
+    spriteView.showsDrawCount = YES;
+    spriteView.showsNodeCount = YES;
+    spriteView.showsFPS = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +44,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+    
+    GameScene *gameScene = [[GameScene alloc] initWithSize:[UIScreen mainScreen].bounds.size];
+    SKView *spriteView = (SKView *)self.view;
+    [spriteView presentScene:gameScene];
+
+}
 
 @end

@@ -17,6 +17,15 @@
 		2D357F341A87DEB900505E5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F331A87DEB900505E5D /* Images.xcassets */; };
 		2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F351A87DEB900505E5D /* LaunchScreen.xib */; };
 		2D357F431A87DEBA00505E5D /* White_collarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F421A87DEBA00505E5D /* White_collarTests.m */; };
+		2DF860B41A91192500EAC547 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B11A91192500EAC547 /* level1.tmx */; };
+		2DF860B51A91192500EAC547 /* tileSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B21A91192500EAC547 /* tileSet.png */; };
+		2DF860B61A91192500EAC547 /* tileSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B31A91192500EAC547 /* tileSet@2x.png */; };
+		2DF860B91A911A5C00EAC547 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860B81A911A5C00EAC547 /* GameScene.m */; };
+		2DF860C01A911D1000EAC547 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BD1A911D1000EAC547 /* JSTileMap.m */; };
+		2DF860C11A911D1000EAC547 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BF1A911D1000EAC547 /* LFCGzipUtility.m */; };
+		2DF860C31A911D4400EAC547 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF860C21A911D4400EAC547 /* libz.dylib */; };
+		2DF860C91A911E0E00EAC547 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C61A911E0E00EAC547 /* DDLog.m */; };
+		2DF860CA1A911E0E00EAC547 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,21 @@
 		2D357F3C1A87DEBA00505E5D /* White collarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "White collarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D357F411A87DEBA00505E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D357F421A87DEBA00505E5D /* White_collarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = White_collarTests.m; sourceTree = "<group>"; };
+		2DF860B11A91192500EAC547 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.tmx; sourceTree = "<group>"; };
+		2DF860B21A91192500EAC547 /* tileSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSet.png; sourceTree = "<group>"; };
+		2DF860B31A91192500EAC547 /* tileSet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tileSet@2x.png"; sourceTree = "<group>"; };
+		2DF860B71A911A5C00EAC547 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		2DF860B81A911A5C00EAC547 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		2DF860BC1A911D1000EAC547 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		2DF860BD1A911D1000EAC547 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		2DF860BE1A911D1000EAC547 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		2DF860BF1A911D1000EAC547 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		2DF860C21A911D4400EAC547 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2DF860C51A911E0E00EAC547 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		2DF860C61A911E0E00EAC547 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		2DF860C71A911E0E00EAC547 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		2DF860CB1A911E5C00EAC547 /* DDLegacyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF860C31A911D4400EAC547 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +105,8 @@
 				2D08AD571A8A7563006DF990 /* LevelSelectViewController.m */,
 				2D357F2D1A87DEB900505E5D /* MainViewController.h */,
 				2D357F2E1A87DEB900505E5D /* MainViewController.m */,
+				2DF860B71A911A5C00EAC547 /* GameScene.h */,
+				2DF860B81A911A5C00EAC547 /* GameScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -105,6 +132,7 @@
 		2D357F251A87DEB900505E5D /* White collar */ = {
 			isa = PBXGroup;
 			children = (
+				2DF860AF1A91192500EAC547 /* Resources */,
 				2D357F2A1A87DEB900505E5D /* AppDelegate.h */,
 				2D357F2B1A87DEB900505E5D /* AppDelegate.m */,
 				2D08AD511A8A7363006DF990 /* Classes */,
@@ -119,7 +147,9 @@
 		2D357F261A87DEB900505E5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2DF860BA1A911D1000EAC547 /* External */,
 				2D357F271A87DEB900505E5D /* Info.plist */,
+				2DF860C21A911D4400EAC547 /* libz.dylib */,
 				2D357F281A87DEB900505E5D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +170,56 @@
 				2D357F411A87DEBA00505E5D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DF860AF1A91192500EAC547 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860B01A91192500EAC547 /* Map */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2DF860B01A91192500EAC547 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860B11A91192500EAC547 /* level1.tmx */,
+				2DF860B21A91192500EAC547 /* tileSet.png */,
+				2DF860B31A91192500EAC547 /* tileSet@2x.png */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2DF860BA1A911D1000EAC547 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860C41A911E0E00EAC547 /* Lumberjack */,
+				2DF860BB1A911D1000EAC547 /* JSTileMap */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		2DF860BB1A911D1000EAC547 /* JSTileMap */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860BC1A911D1000EAC547 /* JSTileMap.h */,
+				2DF860BD1A911D1000EAC547 /* JSTileMap.m */,
+				2DF860BE1A911D1000EAC547 /* LFCGzipUtility.h */,
+				2DF860BF1A911D1000EAC547 /* LFCGzipUtility.m */,
+			);
+			path = JSTileMap;
+			sourceTree = "<group>";
+		};
+		2DF860C41A911E0E00EAC547 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860C51A911E0E00EAC547 /* DDLog.h */,
+				2DF860C61A911E0E00EAC547 /* DDLog.m */,
+				2DF860C71A911E0E00EAC547 /* DDTTYLogger.h */,
+				2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */,
+				2DF860CB1A911E5C00EAC547 /* DDLegacyMacros.h */,
+			);
+			path = Lumberjack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +304,10 @@
 			files = (
 				2D357F321A87DEB900505E5D /* Main.storyboard in Resources */,
 				2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */,
+				2DF860B51A91192500EAC547 /* tileSet.png in Resources */,
+				2DF860B41A91192500EAC547 /* level1.tmx in Resources */,
 				2D357F341A87DEB900505E5D /* Images.xcassets in Resources */,
+				2DF860B61A91192500EAC547 /* tileSet@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF860C91A911E0E00EAC547 /* DDLog.m in Sources */,
 				2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */,
 				2D08AD581A8A7563006DF990 /* LevelSelectViewController.m in Sources */,
 				2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */,
+				2DF860CA1A911E0E00EAC547 /* DDTTYLogger.m in Sources */,
+				2DF860B91A911A5C00EAC547 /* GameScene.m in Sources */,
 				2D357F291A87DEB900505E5D /* main.m in Sources */,
 				2D08AD551A8A739C006DF990 /* CreditsViewController.m in Sources */,
 				2D08AD5B1A8A75D7006DF990 /* GameSceneViewController.m in Sources */,
+				2DF860C11A911D1000EAC547 /* LFCGzipUtility.m in Sources */,
+				2DF860C01A911D1000EAC547 /* JSTileMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
