@@ -9,13 +9,17 @@
 #import "GameScene.h"
 #import "JSTileMap.h"
 #import "DDLog.h"
+#import "Player.h"
 
 @interface GameScene ()
 
 @property (nonatomic, assign) BOOL initialized;
+@property (nonatomic, strong) JSTileMap *map;
+@property (nonatomic, strong) Player *player;
 
 - (void)createSceneContents;
 - (void)createMap;
+- (void)createPlayer;
 
 @end
 
@@ -38,18 +42,29 @@
     self.backgroundColor = [SKColor blueColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
     [self createMap];
+    [self createPlayer];
     
 }
 
 - (void)createMap
 {
 
-    JSTileMap *map = [JSTileMap mapNamed:@"level1.tmx"];
-    if (map != nil) {
-        [self addChild:map];
+    self.map = [JSTileMap mapNamed:@"level1.tmx"];
+    if (self.map != nil) {
+        [self addChild:self.map];
     } else {
         DDLogInfo(@"Failed loading map.");
     }
+    
+}
+
+- (void)createPlayer
+{
+    
+    self.player = [[Player alloc] initWithImageNamed:@"koalio_stand.png"];
+    self.player.position = CGPointMake(200, 50);
+    self.player.zPosition = 15;
+    [self.map addChild:self.player];
     
 }
 

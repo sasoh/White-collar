@@ -26,6 +26,15 @@
 		2DF860C31A911D4400EAC547 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF860C21A911D4400EAC547 /* libz.dylib */; };
 		2DF860C91A911E0E00EAC547 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C61A911E0E00EAC547 /* DDLog.m */; };
 		2DF860CA1A911E0E00EAC547 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */; };
+		2DF860CF1A912BB300EAC547 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860CE1A912BB300EAC547 /* Player.m */; };
+		2DF860D41A912C3500EAC547 /* koalio_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D21A912C3500EAC547 /* koalio_stand.png */; };
+		2DF860D51A912C3500EAC547 /* koalio_stand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */; };
+		2DF860DE1A9131DF00EAC547 /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D81A9131DF00EAC547 /* arrow_left.png */; };
+		2DF860DF1A9131DF00EAC547 /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D91A9131DF00EAC547 /* arrow_left@2x.png */; };
+		2DF860E01A9131DF00EAC547 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860DA1A9131DF00EAC547 /* arrow_right.png */; };
+		2DF860E11A9131DF00EAC547 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860DB1A9131DF00EAC547 /* arrow_right@2x.png */; };
+		2DF860E21A9131DF00EAC547 /* button_game_action.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860DC1A9131DF00EAC547 /* button_game_action.png */; };
+		2DF860E31A9131DF00EAC547 /* button_game_action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860DD1A9131DF00EAC547 /* button_game_action@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,16 @@
 		2DF860C71A911E0E00EAC547 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
 		2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		2DF860CB1A911E5C00EAC547 /* DDLegacyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		2DF860CD1A912BB300EAC547 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = "Game Objects/Player.h"; sourceTree = "<group>"; };
+		2DF860CE1A912BB300EAC547 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = "Game Objects/Player.m"; sourceTree = "<group>"; };
+		2DF860D21A912C3500EAC547 /* koalio_stand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koalio_stand.png; sourceTree = "<group>"; };
+		2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "koalio_stand@2x.png"; sourceTree = "<group>"; };
+		2DF860D81A9131DF00EAC547 /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
+		2DF860D91A9131DF00EAC547 /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_left@2x.png"; sourceTree = "<group>"; };
+		2DF860DA1A9131DF00EAC547 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		2DF860DB1A9131DF00EAC547 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		2DF860DC1A9131DF00EAC547 /* button_game_action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_game_action.png; sourceTree = "<group>"; };
+		2DF860DD1A9131DF00EAC547 /* button_game_action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_game_action@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +118,15 @@
 			children = (
 				2D08AD531A8A739C006DF990 /* CreditsViewController.h */,
 				2D08AD541A8A739C006DF990 /* CreditsViewController.m */,
+				2DF860CC1A912B8800EAC547 /* Game Objects */,
+				2DF860B71A911A5C00EAC547 /* GameScene.h */,
+				2DF860B81A911A5C00EAC547 /* GameScene.m */,
 				2D08AD591A8A75D7006DF990 /* GameSceneViewController.h */,
 				2D08AD5A1A8A75D7006DF990 /* GameSceneViewController.m */,
 				2D08AD561A8A7563006DF990 /* LevelSelectViewController.h */,
 				2D08AD571A8A7563006DF990 /* LevelSelectViewController.m */,
 				2D357F2D1A87DEB900505E5D /* MainViewController.h */,
 				2D357F2E1A87DEB900505E5D /* MainViewController.m */,
-				2DF860B71A911A5C00EAC547 /* GameScene.h */,
-				2DF860B81A911A5C00EAC547 /* GameScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -176,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				2DF860B01A91192500EAC547 /* Map */,
+				2DF860D01A912C3500EAC547 /* Sprites */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,6 +241,54 @@
 				2DF860CB1A911E5C00EAC547 /* DDLegacyMacros.h */,
 			);
 			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		2DF860CC1A912B8800EAC547 /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860CD1A912BB300EAC547 /* Player.h */,
+				2DF860CE1A912BB300EAC547 /* Player.m */,
+			);
+			name = "Game Objects";
+			sourceTree = "<group>";
+		};
+		2DF860D01A912C3500EAC547 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860D11A912C3500EAC547 /* Player */,
+				2DF860D61A9131DF00EAC547 /* UI */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		2DF860D11A912C3500EAC547 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860D21A912C3500EAC547 /* koalio_stand.png */,
+				2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		2DF860D61A9131DF00EAC547 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860D71A9131DF00EAC547 /* Game Scene */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2DF860D71A9131DF00EAC547 /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2DF860D81A9131DF00EAC547 /* arrow_left.png */,
+				2DF860D91A9131DF00EAC547 /* arrow_left@2x.png */,
+				2DF860DA1A9131DF00EAC547 /* arrow_right.png */,
+				2DF860DB1A9131DF00EAC547 /* arrow_right@2x.png */,
+				2DF860DC1A9131DF00EAC547 /* button_game_action.png */,
+				2DF860DD1A9131DF00EAC547 /* button_game_action@2x.png */,
+			);
+			path = "Game Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +371,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF860E01A9131DF00EAC547 /* arrow_right.png in Resources */,
+				2DF860D51A912C3500EAC547 /* koalio_stand@2x.png in Resources */,
+				2DF860E31A9131DF00EAC547 /* button_game_action@2x.png in Resources */,
 				2D357F321A87DEB900505E5D /* Main.storyboard in Resources */,
 				2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */,
+				2DF860D41A912C3500EAC547 /* koalio_stand.png in Resources */,
 				2DF860B51A91192500EAC547 /* tileSet.png in Resources */,
 				2DF860B41A91192500EAC547 /* level1.tmx in Resources */,
+				2DF860DE1A9131DF00EAC547 /* arrow_left.png in Resources */,
+				2DF860E21A9131DF00EAC547 /* button_game_action.png in Resources */,
 				2D357F341A87DEB900505E5D /* Images.xcassets in Resources */,
 				2DF860B61A91192500EAC547 /* tileSet@2x.png in Resources */,
+				2DF860DF1A9131DF00EAC547 /* arrow_left@2x.png in Resources */,
+				2DF860E11A9131DF00EAC547 /* arrow_right@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +406,7 @@
 				2D357F2F1A87DEB900505E5D /* MainViewController.m in Sources */,
 				2D08AD581A8A7563006DF990 /* LevelSelectViewController.m in Sources */,
 				2D357F2C1A87DEB900505E5D /* AppDelegate.m in Sources */,
+				2DF860CF1A912BB300EAC547 /* Player.m in Sources */,
 				2DF860CA1A911E0E00EAC547 /* DDTTYLogger.m in Sources */,
 				2DF860B91A911A5C00EAC547 /* GameScene.m in Sources */,
 				2D357F291A87DEB900505E5D /* main.m in Sources */,

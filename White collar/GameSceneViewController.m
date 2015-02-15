@@ -10,6 +10,13 @@
 #import <SpriteKit/SpriteKit.h>
 #import "GameScene.h"
 
+// TODO: Move to a protocol definition file
+typedef NS_ENUM(NSInteger, UIButtonTag) {
+    UIButtonTagLeft     = 0,
+    UIButtonTagRight    = 1,
+    UIButtonTagAction   = 2
+};
+
 @interface GameSceneViewController ()
 
 @end
@@ -54,6 +61,21 @@
     SKView *spriteView = (SKView *)self.view;
     [spriteView presentScene:gameScene];
 
+}
+
+- (IBAction)didPressButton:(id)sender
+{
+    
+    NSInteger tag = [sender tag];
+    
+    if (tag == UIButtonTagLeft) {
+        NSLog(@"Left!");
+    } else if (tag == UIButtonTagRight) {
+        NSLog(@"Right!");
+    } else if (tag == UIButtonTagAction) {
+        NSLog(@"Action!");
+    }
+    
 }
 
 @end
