@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "ContinuousButton.h"
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene <ContinuousButtonDelegate>
 
 @end

@@ -153,57 +153,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irS-5f-bKs">
-                                <rect key="frame" x="16" y="482" width="66" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="87F-7Y-X9N"/>
-                                    <constraint firstAttribute="width" constant="66" id="dA0-5A-JUu"/>
-                                </constraints>
-                                <state key="normal" image="arrow_left.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="xUS-tK-L6u" eventType="touchUpInside" id="Bbc-pv-WJN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssB-CL-MRI">
+                            <imageView alpha="0.75" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="NkE-cQ-QkH" customClass="ContinuousButton">
                                 <rect key="frame" x="90" y="482" width="66" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="DH4-dL-xzo"/>
-                                    <constraint firstAttribute="width" constant="66" id="LvK-UN-uBG"/>
+                                    <constraint firstAttribute="height" constant="66" id="1uY-Fw-7VU"/>
+                                    <constraint firstAttribute="width" constant="66" id="etA-gn-4N2"/>
                                 </constraints>
-                                <state key="normal" image="arrow_right.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="xUS-tK-L6u" eventType="touchUpInside" id="5Zj-s8-dMI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32f-ic-zA1">
+                            </imageView>
+                            <imageView alpha="0.75" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_game_action.png" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-CK-u4F" customClass="ContinuousButton">
                                 <rect key="frame" x="518" y="482" width="66" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="Anp-yf-py3"/>
-                                    <constraint firstAttribute="width" constant="66" id="sU6-8N-v4g"/>
+                                    <constraint firstAttribute="width" constant="66" id="W4C-LI-JaI"/>
+                                    <constraint firstAttribute="height" constant="66" id="eno-2y-Qyz"/>
                                 </constraints>
-                                <state key="normal" image="button_game_action.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="xUS-tK-L6u" eventType="touchUpInside" id="W0S-xs-UQG"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView alpha="0.75" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="PS0-Re-DZz" customClass="ContinuousButton">
+                                <rect key="frame" x="16" y="482" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="kL8-86-SFe"/>
+                                    <constraint firstAttribute="width" constant="66" id="mVn-7t-BfQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ssB-CL-MRI" firstAttribute="leading" secondItem="irS-5f-bKs" secondAttribute="trailing" constant="8" id="8Tf-fn-hbU"/>
-                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="ssB-CL-MRI" secondAttribute="bottom" constant="8" id="IR8-Sa-nbb"/>
-                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="32f-ic-zA1" secondAttribute="bottom" constant="8" id="SI1-73-vOs"/>
-                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="irS-5f-bKs" secondAttribute="bottom" constant="8" id="iqN-44-ZUq"/>
-                            <constraint firstItem="irS-5f-bKs" firstAttribute="leading" secondItem="Gcs-pB-1IG" secondAttribute="leading" constant="16" id="t5I-hx-uw6"/>
-                            <constraint firstAttribute="trailing" secondItem="32f-ic-zA1" secondAttribute="trailing" constant="16" id="wZ2-5g-lHj"/>
+                            <constraint firstItem="PS0-Re-DZz" firstAttribute="leading" secondItem="Gcs-pB-1IG" secondAttribute="leading" constant="16" id="47S-ad-J7j"/>
+                            <constraint firstItem="NkE-cQ-QkH" firstAttribute="leading" secondItem="PS0-Re-DZz" secondAttribute="trailing" constant="8" id="8Nj-sO-tXT"/>
+                            <constraint firstAttribute="trailing" secondItem="fhx-CK-u4F" secondAttribute="trailing" constant="16" id="ITL-iT-2Gz"/>
+                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="NkE-cQ-QkH" secondAttribute="bottom" constant="8" id="baf-Hy-DcU"/>
+                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="PS0-Re-DZz" secondAttribute="bottom" constant="8" id="fgk-9z-ZKi"/>
+                            <constraint firstItem="h49-vP-LQS" firstAttribute="top" secondItem="fhx-CK-u4F" secondAttribute="bottom" constant="8" id="klo-Xe-YhT"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="PS0-Re-DZz" id="FJU-8a-7uM"/>
+                        <outletCollection property="buttons" destination="NkE-cQ-QkH" id="Mb4-Qi-YAQ"/>
+                        <outletCollection property="buttons" destination="fhx-CK-u4F" id="9TP-Lz-m4s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3K-mr-IOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

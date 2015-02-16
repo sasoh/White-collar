@@ -9,15 +9,19 @@
 #import "GameSceneViewController.h"
 #import <SpriteKit/SpriteKit.h>
 #import "GameScene.h"
-
-// TODO: Move to a protocol definition file
-typedef NS_ENUM(NSInteger, UIButtonTag) {
-    UIButtonTagLeft     = 0,
-    UIButtonTagRight    = 1,
-    UIButtonTagAction   = 2
-};
+#import "ContinuousButton.h"
 
 @interface GameSceneViewController ()
+
+@property (nonatomic, strong) IBOutletCollection(ContinuousButton) NSArray *buttons;
+
+@property (nonatomic, strong) GameScene *gameScene;
+
+//! @brief Configures game scene object & presents it in the SKView
+- (void)configureGameScene;
+
+//! @brief Sets the game scene as delegate for input from buttons
+- (void)configureButtons;
 
 @end
 
@@ -56,24 +60,27 @@ typedef NS_ENUM(NSInteger, UIButtonTag) {
 {
     
     [super viewWillAppear:animated];
+
+    [self configureGameScene];
     
-    GameScene *gameScene = [[GameScene alloc] initWithSize:[UIScreen mainScreen].bounds.size];
-    SKView *spriteView = (SKView *)self.view;
-    [spriteView presentScene:gameScene];
+    [self configureButtons];
 
 }
 
-- (IBAction)didPressButton:(id)sender
+- (void)configureGameScene
 {
     
-    NSInteger tag = [sender tag];
+    self.gameScene = [[GameScene alloc] initWithSize:[UIScreen mainScreen].bounds.size];
+    SKView *spriteView = (SKView *)self.view;
+    [spriteView presentScene:self.gameScene];
     
-    if (tag == UIButtonTagLeft) {
-        NSLog(@"Left!");
-    } else if (tag == UIButtonTagRight) {
-        NSLog(@"Right!");
-    } else if (tag == UIButtonTagAction) {
-        NSLog(@"Action!");
+}
+
+- (void)configureButtons
+{
+    
+    for (ContinuousButton *button in self.buttons) {
+        [button setDelegate:self.gameScene];
     }
     
 }

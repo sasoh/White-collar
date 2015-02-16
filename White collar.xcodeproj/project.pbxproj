@@ -22,6 +22,7 @@
 		2DC2B7191A92748E008A1722 /* tilemap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2B7161A92748E008A1722 /* tilemap@2x.png */; };
 		2DE4CCF41A9275980060C485 /* sprite_valeri.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE4CCF21A9275980060C485 /* sprite_valeri.png */; };
 		2DE4CCF51A9275980060C485 /* sprite_valeri@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE4CCF31A9275980060C485 /* sprite_valeri@2x.png */; };
+		2DE4CCF91A9277450060C485 /* ContinuousButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4CCF81A9277450060C485 /* ContinuousButton.m */; };
 		2DF860B91A911A5C00EAC547 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860B81A911A5C00EAC547 /* GameScene.m */; };
 		2DF860C01A911D1000EAC547 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BD1A911D1000EAC547 /* JSTileMap.m */; };
 		2DF860C11A911D1000EAC547 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BF1A911D1000EAC547 /* LFCGzipUtility.m */; };
@@ -72,6 +73,8 @@
 		2DC2B7161A92748E008A1722 /* tilemap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tilemap@2x.png"; sourceTree = "<group>"; };
 		2DE4CCF21A9275980060C485 /* sprite_valeri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_valeri.png; sourceTree = "<group>"; };
 		2DE4CCF31A9275980060C485 /* sprite_valeri@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sprite_valeri@2x.png"; sourceTree = "<group>"; };
+		2DE4CCF71A9277450060C485 /* ContinuousButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContinuousButton.h; path = "Continuous Button/ContinuousButton.h"; sourceTree = "<group>"; };
+		2DE4CCF81A9277450060C485 /* ContinuousButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContinuousButton.m; path = "Continuous Button/ContinuousButton.m"; sourceTree = "<group>"; };
 		2DF860B71A911A5C00EAC547 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2DF860B81A911A5C00EAC547 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		2DF860BC1A911D1000EAC547 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 				2D08AD531A8A739C006DF990 /* CreditsViewController.h */,
 				2D08AD541A8A739C006DF990 /* CreditsViewController.m */,
 				2DF860CC1A912B8800EAC547 /* Game Objects */,
+				2DE4CCF61A9277100060C485 /* Game Scene Continuous Button */,
 				2DF860B71A911A5C00EAC547 /* GameScene.h */,
 				2DF860B81A911A5C00EAC547 /* GameScene.m */,
 				2D08AD591A8A75D7006DF990 /* GameSceneViewController.h */,
@@ -190,6 +194,15 @@
 				2D357F411A87DEBA00505E5D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DE4CCF61A9277100060C485 /* Game Scene Continuous Button */ = {
+			isa = PBXGroup;
+			children = (
+				2DE4CCF71A9277450060C485 /* ContinuousButton.h */,
+				2DE4CCF81A9277450060C485 /* ContinuousButton.m */,
+			);
+			name = "Game Scene Continuous Button";
 			sourceTree = "<group>";
 		};
 		2DF860AF1A91192500EAC547 /* Resources */ = {
@@ -412,6 +425,7 @@
 				2D357F291A87DEB900505E5D /* main.m in Sources */,
 				2D08AD551A8A739C006DF990 /* CreditsViewController.m in Sources */,
 				2D08AD5B1A8A75D7006DF990 /* GameSceneViewController.m in Sources */,
+				2DE4CCF91A9277450060C485 /* ContinuousButton.m in Sources */,
 				2DF860C11A911D1000EAC547 /* LFCGzipUtility.m in Sources */,
 				2DF860C01A911D1000EAC547 /* JSTileMap.m in Sources */,
 			);

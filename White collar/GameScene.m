@@ -68,4 +68,19 @@
     
 }
 
+#pragma mark - Continuous button actions
+- (void)didBeginTouchOnContinuousButton:(ContinuousButton *)button
+{
+    
+    DDLogInfo(@"touch start on %d!", (int)[button tag]);
+    
+}
+
+- (void)didEndTouchOnContinuousButton:(ContinuousButton *)button
+{
+    
+    DDLogInfo(@"touch end on %d!", (int)[button tag]);
+    
+}
+
 @end
