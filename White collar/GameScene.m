@@ -16,10 +16,13 @@
 @property (nonatomic, assign) BOOL initialized;
 @property (nonatomic, strong) JSTileMap *map;
 @property (nonatomic, strong) Player *player;
+@property (nonatomic, assign) NSTimeInterval previousUpdateTime;
+@property (nonatomic, assign) CGPoint movementDirection;
 
 - (void)createSceneContents;
 - (void)createMap;
 - (void)createPlayer;
+- (void)updateViewPosition:(NSTimeInterval)delta;
 
 @end
 
@@ -49,6 +52,8 @@
 - (void)createMap
 {
 
+    self.movementDirection = CGPointZero;
+    
     self.map = [JSTileMap mapNamed:@"map1.tmx"];
     if (self.map != nil) {
         [self addChild:self.map];
@@ -68,18 +73,64 @@
     
 }
 
+- (void)update:(NSTimeInterval)currentTime
+{
+    
+    NSTimeInterval delta = currentTime - self.previousUpdateTime;
+    
+    // limit delta time so there are no larger time stamps
+    if (delta > 0.02) {
+        delta = 0.02;
+    }
+    
+    self.previousUpdateTime = currentTime;
+    
+    [self updateViewPosition:delta];
+    
+}
+
+- (void)updateViewPosition:(NSTimeInterval)delta
+{
+    
+    CGPoint mapPosition = self.map.position;
+    mapPosition.x += self.movementDirection.x * delta;
+    self.map.position = mapPosition;
+    
+    CGPoint playerPosition = self.player.position;
+    playerPosition.x -= self.movementDirection.x * delta;
+    self.player.position = playerPosition;
+    
+    
+}
+
 #pragma mark - Continuous button actions
 - (void)didBeginTouchOnContinuousButton:(ContinuousButton *)button
 {
     
-    DDLogInfo(@"touch start on %d!", (int)[button tag]);
+    static const CGFloat offsetPerSecond = 150.0f; // sample value
+    
+    ContinuousButtonTag tag = (ContinuousButtonTag)[button tag];
+    if (tag == ContinuousButtonTagLeft) {
+        self.movementDirection = CGPointMake(offsetPerSecond, 0.0f);
+    } else if (tag == ContinuousButtonTagRight) {
+        self.movementDirection = CGPointMake(-offsetPerSecond, 0.0f);
+    } else if (tag == ContinuousButtonTagAction) {
+        NSLog(@"Action started.");
+    }
     
 }
 
 - (void)didEndTouchOnContinuousButton:(ContinuousButton *)button
 {
     
-    DDLogInfo(@"touch end on %d!", (int)[button tag]);
+    ContinuousButtonTag tag = (ContinuousButtonTag)[button tag];
+    if (tag == ContinuousButtonTagLeft) {
+        self.movementDirection = CGPointZero;
+    } else if (tag == ContinuousButtonTagRight) {
+        self.movementDirection = CGPointZero;
+    } else if (tag == ContinuousButtonTagAction) {
+        NSLog(@"Action stopped.");
+    }
     
 }
 

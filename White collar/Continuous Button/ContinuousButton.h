@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, UIButtonTag) {
-    UIButtonTagNone     = 0,
-    UIButtonTagLeft     = 1,
-    UIButtonTagRight    = 2,
-    UIButtonTagAction   = 3
+typedef NS_ENUM(NSInteger, ContinuousButtonTag) {
+    ContinuousButtonTagNone     = 0,
+    ContinuousButtonTagLeft     = 1,
+    ContinuousButtonTagRight    = 2,
+    ContinuousButtonTagAction   = 3
 };
 
 @class ContinuousButton;
