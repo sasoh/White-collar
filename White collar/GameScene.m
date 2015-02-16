@@ -31,7 +31,7 @@
     if (self.initialized == NO)
     {
         [self createSceneContents];
-        _initialized = YES;
+        self.initialized = YES;
     }
     
 }
@@ -39,7 +39,7 @@
 - (void)createSceneContents
 {
     
-    self.backgroundColor = [SKColor blueColor];
+    self.backgroundColor = [SKColor grayColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
     [self createMap];
     [self createPlayer];
@@ -49,7 +49,7 @@
 - (void)createMap
 {
 
-    self.map = [JSTileMap mapNamed:@"level1.tmx"];
+    self.map = [JSTileMap mapNamed:@"map1.tmx"];
     if (self.map != nil) {
         [self addChild:self.map];
     } else {
@@ -61,8 +61,8 @@
 - (void)createPlayer
 {
     
-    self.player = [[Player alloc] initWithImageNamed:@"koalio_stand.png"];
-    self.player.position = CGPointMake(200, 50);
+    self.player = [[Player alloc] initWithImageNamed:@"sprite_valeri.png"];
+    self.player.position = CGPointMake(200, 90);
     self.player.zPosition = 15;
     [self.map addChild:self.player];
     

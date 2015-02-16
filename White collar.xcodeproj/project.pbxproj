@@ -17,9 +17,11 @@
 		2D357F341A87DEB900505E5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F331A87DEB900505E5D /* Images.xcassets */; };
 		2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D357F351A87DEB900505E5D /* LaunchScreen.xib */; };
 		2D357F431A87DEBA00505E5D /* White_collarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D357F421A87DEBA00505E5D /* White_collarTests.m */; };
-		2DF860B41A91192500EAC547 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B11A91192500EAC547 /* level1.tmx */; };
-		2DF860B51A91192500EAC547 /* tileSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B21A91192500EAC547 /* tileSet.png */; };
-		2DF860B61A91192500EAC547 /* tileSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860B31A91192500EAC547 /* tileSet@2x.png */; };
+		2DC2B7171A92748E008A1722 /* map1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2B7141A92748E008A1722 /* map1.tmx */; };
+		2DC2B7181A92748E008A1722 /* tilemap.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2B7151A92748E008A1722 /* tilemap.png */; };
+		2DC2B7191A92748E008A1722 /* tilemap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2B7161A92748E008A1722 /* tilemap@2x.png */; };
+		2DE4CCF41A9275980060C485 /* sprite_valeri.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE4CCF21A9275980060C485 /* sprite_valeri.png */; };
+		2DE4CCF51A9275980060C485 /* sprite_valeri@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE4CCF31A9275980060C485 /* sprite_valeri@2x.png */; };
 		2DF860B91A911A5C00EAC547 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860B81A911A5C00EAC547 /* GameScene.m */; };
 		2DF860C01A911D1000EAC547 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BD1A911D1000EAC547 /* JSTileMap.m */; };
 		2DF860C11A911D1000EAC547 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860BF1A911D1000EAC547 /* LFCGzipUtility.m */; };
@@ -27,8 +29,6 @@
 		2DF860C91A911E0E00EAC547 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C61A911E0E00EAC547 /* DDLog.m */; };
 		2DF860CA1A911E0E00EAC547 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860C81A911E0E00EAC547 /* DDTTYLogger.m */; };
 		2DF860CF1A912BB300EAC547 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF860CE1A912BB300EAC547 /* Player.m */; };
-		2DF860D41A912C3500EAC547 /* koalio_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D21A912C3500EAC547 /* koalio_stand.png */; };
-		2DF860D51A912C3500EAC547 /* koalio_stand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */; };
 		2DF860DE1A9131DF00EAC547 /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D81A9131DF00EAC547 /* arrow_left.png */; };
 		2DF860DF1A9131DF00EAC547 /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860D91A9131DF00EAC547 /* arrow_left@2x.png */; };
 		2DF860E01A9131DF00EAC547 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF860DA1A9131DF00EAC547 /* arrow_right.png */; };
@@ -67,9 +67,11 @@
 		2D357F3C1A87DEBA00505E5D /* White collarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "White collarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D357F411A87DEBA00505E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D357F421A87DEBA00505E5D /* White_collarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = White_collarTests.m; sourceTree = "<group>"; };
-		2DF860B11A91192500EAC547 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.tmx; sourceTree = "<group>"; };
-		2DF860B21A91192500EAC547 /* tileSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSet.png; sourceTree = "<group>"; };
-		2DF860B31A91192500EAC547 /* tileSet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tileSet@2x.png"; sourceTree = "<group>"; };
+		2DC2B7141A92748E008A1722 /* map1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map1.tmx; sourceTree = "<group>"; };
+		2DC2B7151A92748E008A1722 /* tilemap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilemap.png; sourceTree = "<group>"; };
+		2DC2B7161A92748E008A1722 /* tilemap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tilemap@2x.png"; sourceTree = "<group>"; };
+		2DE4CCF21A9275980060C485 /* sprite_valeri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_valeri.png; sourceTree = "<group>"; };
+		2DE4CCF31A9275980060C485 /* sprite_valeri@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sprite_valeri@2x.png"; sourceTree = "<group>"; };
 		2DF860B71A911A5C00EAC547 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2DF860B81A911A5C00EAC547 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		2DF860BC1A911D1000EAC547 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
@@ -84,8 +86,6 @@
 		2DF860CB1A911E5C00EAC547 /* DDLegacyMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
 		2DF860CD1A912BB300EAC547 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = "Game Objects/Player.h"; sourceTree = "<group>"; };
 		2DF860CE1A912BB300EAC547 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = "Game Objects/Player.m"; sourceTree = "<group>"; };
-		2DF860D21A912C3500EAC547 /* koalio_stand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koalio_stand.png; sourceTree = "<group>"; };
-		2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "koalio_stand@2x.png"; sourceTree = "<group>"; };
 		2DF860D81A9131DF00EAC547 /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
 		2DF860D91A9131DF00EAC547 /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_left@2x.png"; sourceTree = "<group>"; };
 		2DF860DA1A9131DF00EAC547 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
@@ -204,9 +204,9 @@
 		2DF860B01A91192500EAC547 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				2DF860B11A91192500EAC547 /* level1.tmx */,
-				2DF860B21A91192500EAC547 /* tileSet.png */,
-				2DF860B31A91192500EAC547 /* tileSet@2x.png */,
+				2DC2B7141A92748E008A1722 /* map1.tmx */,
+				2DC2B7151A92748E008A1722 /* tilemap.png */,
+				2DC2B7161A92748E008A1722 /* tilemap@2x.png */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -264,8 +264,8 @@
 		2DF860D11A912C3500EAC547 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				2DF860D21A912C3500EAC547 /* koalio_stand.png */,
-				2DF860D31A912C3500EAC547 /* koalio_stand@2x.png */,
+				2DE4CCF21A9275980060C485 /* sprite_valeri.png */,
+				2DE4CCF31A9275980060C485 /* sprite_valeri@2x.png */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -372,18 +372,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF860E01A9131DF00EAC547 /* arrow_right.png in Resources */,
-				2DF860D51A912C3500EAC547 /* koalio_stand@2x.png in Resources */,
+				2DC2B7191A92748E008A1722 /* tilemap@2x.png in Resources */,
+				2DE4CCF41A9275980060C485 /* sprite_valeri.png in Resources */,
 				2DF860E31A9131DF00EAC547 /* button_game_action@2x.png in Resources */,
 				2D357F321A87DEB900505E5D /* Main.storyboard in Resources */,
 				2D357F371A87DEB900505E5D /* LaunchScreen.xib in Resources */,
-				2DF860D41A912C3500EAC547 /* koalio_stand.png in Resources */,
-				2DF860B51A91192500EAC547 /* tileSet.png in Resources */,
-				2DF860B41A91192500EAC547 /* level1.tmx in Resources */,
 				2DF860DE1A9131DF00EAC547 /* arrow_left.png in Resources */,
 				2DF860E21A9131DF00EAC547 /* button_game_action.png in Resources */,
+				2DE4CCF51A9275980060C485 /* sprite_valeri@2x.png in Resources */,
 				2D357F341A87DEB900505E5D /* Images.xcassets in Resources */,
-				2DF860B61A91192500EAC547 /* tileSet@2x.png in Resources */,
+				2DC2B7181A92748E008A1722 /* tilemap.png in Resources */,
 				2DF860DF1A9131DF00EAC547 /* arrow_left@2x.png in Resources */,
+				2DC2B7171A92748E008A1722 /* map1.tmx in Resources */,
 				2DF860E11A9131DF00EAC547 /* arrow_right@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
